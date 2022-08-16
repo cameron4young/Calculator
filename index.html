@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 2</title>
+	<link rel="stylesheet" href="style.css">
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+	<!-- <script src="https://pagecdn.io/lib/mathjs/10.4.0/math.js"></script> -->
+</head>
+<body>
+	<main>
+		<section class="txt">
+			<div class="txtbox">
+				<p class="output">
+					0
+				</p>
+			</div>
+		</section>
+		<!-- memory functions -->
+		<section class="memory">
+			<span style="text-align: center; font-size: 30px; font-weight:bold;"> MEMORY</span>
+			<!-- clears all memory -->
+			<span class="redbutton">CLEAR</span>
+			<!-- recalls latest element -->
+			<span class="redbutton">RECALL</span>
+			 <!-- stores current value -->
+			<span class="redbutton">STORE</span>
+			<!-- adds latest memory element to current display -->
+			<span class="redbutton">ADD</span>
+			<!-- subtracts latest memory element to current display -->
+			<span class="redbutton">SUBTRACT</span>
+		</section>
+		<section class="custom">
+			<!-- displays all history -->
+			<h1>HISTORY</h1>
+			<div class="scrollbox" id="history">
+			</div>
+			<!-- displays values stored in memory -->
+			<h1>MEMORY</h1>
+			<div class="scrollbox" id="memory">
+			</div>
+		</section>
+		<section class="misc">
+			<!-- when clicked, it replaces the number buttons with functions -->
+			<span class="bluebutton" style="font-size:1.5vmax;">MORE FUNCTIONS</span>
+			<!-- used for exponents -->
+			<span class="bluebutton">^</span>
+			<!-- pi constant -->
+			<span class="bluebutton">pi</span>
+			<!-- e constant -->
+			<span class="bluebutton">e</span>
+		</section>
+		<section class="buttons">
+			<!-- clears display, sets value back to zero -->
+			<span class="redbutton">AC</span>
+			<!-- makes display value negative/positive -->
+			<span class="redbutton">(-)</span>
+			<span class="redbutton" id="operator">%</span>
+			<span class="redbutton" id="operator">/</span>
+			<span class="bluebutton number">7</span>
+			<span class="bluebutton number">8</span>
+			<span class="bluebutton number">9</span>
+			<span class="redbutton" id="operator">*</span>
+			<span class="bluebutton number">4</span>
+			<span class="bluebutton number">5</span>
+			<span class="bluebutton number">6</span>
+			<span class="redbutton" id="operator">-</span>
+			<span class="bluebutton number">1</span>
+			<span class="bluebutton number">2</span>
+			<span class="bluebutton number">3</span>
+			<span class="redbutton" id="operator">+</span>
+			<span class="bluebutton number">0</span>
+			<span class="bluebutton" id="operator">(</span>
+			<span class="bluebutton" id="operator">)</span>
+			<span class="redbutton">.</span>
+			<!-- erases last number/operator in display -->
+			<span class="bluebutton" style="grid-area: 6 / 1/ 6/ span 2;">BACKSPACE</span>
+			<span class="redbutton" style="grid-area: 6 / 3/ 6/ span 2;">=</span>
+		</section>
+	</main>
+	<script src="myscript.js"></script>
+</body>
+</html>
